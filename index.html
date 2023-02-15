@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Interview - Form</title>
+</head>
+<body>
+  <main>
+    <h1 id="title">Interview</h1>
+    <p id="description">A form for rate your ability</p>
+
+    <div id="separator"></div>
+
+    <form id="survey-form">
+
+      <label id="name-label">Name<br/></label>
+      <input 
+      id="name" 
+      type="text" 
+      placeholder="Type your name here..."
+      required><br>
+      <label for="email" id="email-label">Email</label><br>
+      <input 
+      id="email" 
+      type="email"
+      placeholder="Type your name here..." 
+      required><br>
+      <label for="number" id="number-label">Age<br/></label>
+      <input 
+      id="number" 
+      type="number"
+      min="18"
+      max="99"
+      value="age"
+      placeholder="Type your age here..."
+      required><br>
+
+      <label for="dropdown">What is your language?</label><br/>
+      <select id="dropdown">
+        <option disabled selected value="none">-- Select your language --</option>
+        <option value="pt-br">Portuguese Brasilian</option>
+        <option value="en-uS">English</option>
+        <option value="sp">Spanish</option>
+      </select>
+      <br/>
+
+      <div id="choices-you-choose">
+        <label>Do you speak more than one language?</label>
+        <label><input name="choices" type="radio" id="option-yes" value="yes">Yes</label>
+        <label><input name="choices" type="radio" value="no" checked>No</label>
+      </div>
+      <div id="programming-languages">
+        <label>Which programming languages you know?</label>
+        <label><input name="py" type="checkbox" value="python">Python</label>
+        <label><input name="rb" type="checkbox" value="ruby">Ruby</label>
+        <label><input name="cp" type="checkbox" value="c++">C++</label>
+        <label><input name="cc" type="checkbox" value="c#">C#</label>
+        <label><input name="c" type="checkbox" value="c">C</label>
+        <label><input name="java" type="checkbox" value="java">Java</label><br>
+      </div>
+      <button id="submit">Submit</button>
+      <div id="separator"></div>
+      
+      <label>Any comments or sugestions?</label><br>
+      <textarea placeholder="Type your comments or sugestions here...">
+      </textarea><br>
+      <button id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
